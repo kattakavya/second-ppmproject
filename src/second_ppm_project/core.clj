@@ -9,8 +9,7 @@
         [r (mod i 255)
          g (mod j 255)
          b (mod (* i j) 255)]]
-        
-   (clojure.string/join  (str  r " " g " " b "\n"))))
+       (clojure.string/join  (str  r " " g " " b "\n"))))
 
 (def result
   (apply str head foo))
